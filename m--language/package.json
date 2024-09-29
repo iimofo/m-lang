@@ -1,0 +1,31 @@
+{
+  "name": "m--language",
+  "displayName": "M- Language",
+  "description": "A new programming language for our lovely community",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "m-",
+      "aliases": ["M- Language", "m-"],
+      "extensions": [".m"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "m-",
+      "scopeName": "m.py",
+      "path": "./syntaxes/m-.tmLanguage.json"
+    }],
+    "commands": [
+      {
+        "command": "extension.runM",
+        "title": "Run M- Code"
+      }
+    ]
+  }
+}

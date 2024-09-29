@@ -1,0 +1,32 @@
+{
+    "scopeName": "source.m",
+    "patterns": [
+      {
+        "name": "keyword.control.m",
+        "match": "\\b(let|func|return|View|Text|Button|if|else|for|while|component)\\b"
+      },
+      {
+        "name": "variable.other.m",
+        "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+      },
+      {
+        "name": "string.quoted.double.m",
+        "match": "\"([^\"]*)\""
+      },
+      {
+        "name": "constant.numeric.m",
+        "match": "\\b\\d+\\b"
+      },
+      {
+        "name": "punctuation.definition.m",
+        "match": "[\\(\\)\\{\\}\\[\\]\\.,]"
+      },
+      {
+        "name": "keyword.operator.m",
+        "match": "[\\+\\-\\*/=<>!&|]"
+      }
+    ],
+    "repository": {},
+    "scope": "source.m"
+  }
+  
